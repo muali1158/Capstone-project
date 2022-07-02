@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Roboto:wght@300&display=swap');
+.bg-custom{
+	background: #283593;
+}
+.navbar .nav-item .nav-link{
+	font-size: 20px;
+	color: white;
+}
+.navbar-custom .nav-item:hour .nav-link{
+	background: white;
+	color: black;
+	border-radius: 10px;
+}
+.navbar .logo{
+    font-family: sans-serif;
+    font-size: 2.2em;
+    color: white;
+}
+.navbar .logo span{
+    color: #e74c3c;
+}
+.navbar .banner{
+	font-family: sans-serif;
+	color: white;
+    align-items: center !important;
+}
+.nav-item a{
+	margin-left: 45%;
+	justify-content: space-between;
+}
+.navbar .register{
+	font-family: sans-serif;
+	color: white;
+	margin-left: 20%;
+}
+.login-container{
+	 margin-left: 28%;
+	justify-content: center;
+}
+
+.login-container h1{
+	text-align: center;
+} 
+.form-group{
+	text-align: center;
+}
+.flex-login{
+	text-align: center;
+	justify-content: center;
+}
+.back-img{
+	background: url("img/j1.png");
+	height:80vh;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.footer{
+    margin-top: 0em;
+    background-color: #283593;
+    padding:2px;
+    color: #fff;
+    text-align: center;
+}
+
+	
+
+
+
+
+
+
+
