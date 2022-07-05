@@ -13,7 +13,7 @@ public class MainController {
     public String root() {
    //     return "index";
     	System.out.println("IN  MainController->root()");
-        return "redirect:/students";
+        return "redirect:/home";
     }
 
     @GetMapping("/login")
@@ -21,6 +21,13 @@ public class MainController {
     	System.out.println("IN  MainController->login()");
         return "login";
     }
+  
+    
+@GetMapping("/addstudent")
+public String getHome(Model model) {
+	System.out.println("homeMapping");
+	return "create_student";
+}
 
     @GetMapping("/user")
     public String userIndex() {
@@ -35,12 +42,19 @@ public class MainController {
     	System.out.println("IN  MainController->logoutResponse()");
         return "Logged Out!!!!";
     }
-    @ResponseBody
-    @GetMapping("/home")
+   // @ResponseBody
+    @RequestMapping("/home")
     public String home() {
      //   return "index";
     	System.out.println("IN  MainController->home()");
         return "home";
     }
+//    @RequestMapping("/add_student")
+//    public String add_student() {
+//     //   return "index";
+//    	System.out.println("IN  MainController->home()");
+//        return "create_student";
+//    }
 
 }
+

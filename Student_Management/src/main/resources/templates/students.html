@@ -3,18 +3,16 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Student Management System</title>
-<!--style="background-color: #283593;"  -->
-<link rel="stylesheet" href="style.css">
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 	crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<nav class="navbar navbar-expand-md bg-custom navbar-dark flex-nav "
 		style="background-color: #283593;">
 		<!-- Brand -->
-		<!-- <a class="navbar-brand" href="#">Student Management System</a> -->
 		<div class="logo">
 			<span>S</span>tudent<span>M</span>anagement
 		</div>
@@ -38,7 +36,7 @@
 					th:href="@{/students}">Students</a></li>
 				<li class="nav-item"><a class="nav-link"
 					th:href="@{/create_student}">Add_Student</a></li>
-				<li class="nav-item" style="margin-left: 420px"><a
+				<li class="nav-item" style="margin-left: 400px"><a
 					class="nav-link" th:href="@{/login}">Logout</a></li>
 			</ul>
 		</div>
@@ -78,13 +76,11 @@
 			</tbody>
 		</table>
 	</div>
+	
 	<footer class="footer">
-		<div class="social-media-linke">
 			<div class="container">
-
 				<p>Student Management &copy; 2022, All Rights Reserve</p>
 			</div>
-		</div>
 
 	</footer>
 </body>

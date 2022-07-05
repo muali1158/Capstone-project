@@ -4,17 +4,17 @@
 <meta charset="ISO-8859-1">
 <title>Student Management System</title>
 <!--style="background-color: #283593;"  -->
-<link rel="stylesheet" href="style.css">
+
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 	crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body style="background-color: #f0f0f0;">
 	<nav class="navbar navbar-expand-md bg-custom navbar-dark "
 		style="background-color: #283593;">
-		<!-- Brand -->
-		<!-- <a class="navbar-brand" href="#">Student Management System</a> -->
+		<!-- Brand -->		
 		<div class="logo">
 			<span>S</span>tudent<span>M</span>anagement
 		</div>
@@ -37,7 +37,7 @@
 		<div class="row">
 			<div class="col-md-5 col-md-offset-3 login-container">
 				<h1>Login page</h1>
-				<form th:action="@{/login}" method="post">
+				<form th:action="@{/home}" method="post">
 					<div th:if="${param.error}">
 						<div class="alert alert-danger">Invalid username or
 							password.</div>
@@ -78,14 +78,12 @@
 		th:src="@{/webjars/jquery/3.2.1/jquery.min.js/}"></script>
 	<script type="text/javascript"
 		th:src="@{/webjars/bootstrap/3.3.7/js/bootstrap.min.js}"></script>
+		
 	<footer class="footer" style="margin-top: 115px;">
-		<div class="social-media-linke">
 			<div class="container">
 
 				<p>Student Management &copy; 2022, All Rights Reserve</p>
 			</div>
-		</div>
-
 	</footer>
 </body>
 </html>
