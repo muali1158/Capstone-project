@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
@@ -10,85 +10,70 @@
 	crossorigin="anonymous">
 </head>
 <body style="background-color: #f0f0f0;">
-<nav class="navbar navbar-expand-md bg-custom navbar-dark flex-nav "
-		style="background-color: #283593;">
-  
-  <a class="navbar-brand" href="#"></a>
-<div class="logo">
-			<span>S</span>tudent<span>M</span>anagement
+	<nav class="navbar navbar-expand-md bg-dark bg-custom">
+		<!-- Brand -->
+		<a class="navbar-brand" href="#"></a>
+		<div class="logo">
+			<span>S</span>tudent <span>M</span>anagement <span>S</span>ystem
 		</div>
-  <h3 style="margin-left: 100px" class="register">Add Student</h3>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
 
-  
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav">
-      
-    </ul>
-  </div>
-</nav>
-<br>
-<br>
-	<div class = "container">
-		<div class = "row">
-			<div class ="col-lg-6 col-md-6 col-sm-6 container justify-content-center card">
-				<h1 class = "text-center"> Create New Student </h1>
-				<div class = "card-body">
-					<form th:action="@{/home}" th:object = "${student}" method="POST">
-						<div class ="form-group">
-							<label> Student First Name </label>
-							<input
-							type = "text"
-							name = "firstName"
-							th:field = "*{firstName}"
-							class = "form-control"
-							placeholder="Enter Student First Name" 
-							/>
+
+		<!-- Toggler/collapsibe Button -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Navbar links -->
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav">
+				<li class="nav-item"><a class="nav-link" th:href="@{/students}">Student_Management</a></li>
+			</ul>
+		</div>
+	</nav>
+	<br>
+	<br>
+	<div class="container">
+		<div class="row">
+			<div
+				class="col-lg-6 col-md-6 col-sm-6 container justify-content-center card">
+				<h1 class="text-center">Create New Student</h1>
+				<div class="card-body">
+					<form th:action="@{/students}" th:object="${student}" method="POST">
+						<div class="form-group">
+							<label> Student First Name </label> <input type="text"
+								name="firstName" th:field="*{firstName}" class="form-control"
+								placeholder="Enter Student First Name" />
 						</div>
-						
-						<div class ="form-group">
-							<label> Student Last Name </label>
-							<input
-							type = "text"
-							name = "lastName"
-							th:field = "*{lastName}"
-							class = "form-control"
-							placeholder="Enter Student Last Name" 
-							/>
+
+						<div class="form-group">
+							<label> Student Last Name </label> <input type="text"
+								name="lastName" th:field="*{lastName}" class="form-control"
+								placeholder="Enter Student Last Name" />
 						</div>
-						
-						<div class ="form-group">
-							<label> Student Email </label>
-							<input
-							type = "text"
-							name = "email"
-							th:field = "*{email}"
-							class = "form-control"
-							placeholder="Enter Student Email" 
-							/>
+
+						<div class="form-group">
+							<label> Student Email </label> <input type="text" name="email"
+								th:field="*{email}" class="form-control"
+								placeholder="Enter Student Email" />
 						</div>
-						
-						<div class = "box-footer">
-							<button type="submit" class = "btn btn-primary">
-								Submit
-							</button>
+
+						<div class="box-footer">
+							<button type="submit" class="btn btn-primary">Submit</button>
 						</div>
 					</form>
-				
+
 				</div>
 			</div>
 		</div>
 	</div>
-	<footer class="footer" style="margin-top: 115px;">
-		<div class="social-media-linke">
-			<div class="container">
-
-				<p>Student Management &copy; 2022, All Rights Reserve</p>
-			</div>
+	<footer class="footer" style="Margin-top: 47px;">
+		<div class="container" style="padding:6px;">
+		<div class="container">
+			<p>Student Management &copy; 2022, All Rights Reserve</p>
+		</div>
 		</div>
 
 	</footer>
 </body>
-</html> 
+</html>
